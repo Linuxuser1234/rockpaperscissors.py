@@ -1,0 +1,28 @@
+import random
+possible_actions = ["rock","paper","scissors"]
+computer_action = random.choice(possible_actions)
+game=input("would you like to play a game y or no")
+if (game=="y"):
+  print("remember rock beats scissors paper beats rock scissors beats paper")
+  play=input("rock paper scissors")
+  if(play  == computer_action):
+    print("you both picked the same, it is a draw")
+  elif(play == "rock" and computer_action == "scissors"):
+    print("You picked rock and the computer picked scissors. You win")
+  elif(play == "rock" and computer_action == "paper"):
+    print("You picked rock and the computer picked paper. You lose")
+  elif(play == "paper" and computer_action == "rock"):
+    print('you both pick paper ')
+  elif(play == "scissors" and computer_action == "paper"):
+    print("come on")
+  elif(play == "paper" and computer_action =="scissors"):
+    print("you beat me :/")
+    print("dang you got me ")
+  elif(play == "scissors" and computer_action == "rock"):
+    print("you beat me agin")
+if (game=="no" ):
+    print("ok i will leave")
+
+
+==========================
+edit the code here===> trinket.io
